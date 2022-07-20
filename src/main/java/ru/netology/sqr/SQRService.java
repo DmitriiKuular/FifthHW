@@ -10,9 +10,20 @@ public class SQRService {
 //                counter++;
 //            }
 
-        for (int i = x; i <= y; i++) {
-            for (int n = 1; n <= 1_000_000; n++) {
-                if (n * n == i) {
+//        for (int i = x; i <= y; i++) {
+//            for (int n = 1; n <= 1_000_000; n++) {
+//                if (n * n == i) {
+//                    counter++;
+//                }
+//            }
+//        }
+//        return counter;
+
+        for (int i = 10; i <= 90; i++) {
+            if (i * i < x) {
+                continue;
+            } else {
+                if (i * i <= y) {
                     counter++;
                 }
             }
